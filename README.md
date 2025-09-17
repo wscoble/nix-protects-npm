@@ -89,14 +89,17 @@ nix build       # Build with full Nix security verification
 
 ### 1. Silent Dependency Replacement Attack
 **Traditional npm**: ❌ Silently installs malicious code when attackers replace package content
+
 **Nix + dream2nix**: ✅ Build fails immediately due to cryptographic hash mismatch
 
 ### 2. Post-install Script Attack
 **Traditional npm**: ❌ Automatically executes malicious scripts during package installation
+
 **Nix + dream2nix**: ✅ Hermetic environment eliminates arbitrary code execution
 
 ### 3. Transitive Dependency Poisoning
 **Traditional npm**: ❌ Deep dependency compromises propagate silently through the tree
+
 **Nix + dream2nix**: ✅ Full dependency tree verification prevents all tampering
 
 ## 📊 Security Status
