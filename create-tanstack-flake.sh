@@ -74,8 +74,11 @@ cat > "$TARGET_DIR/flake.nix" << 'EOF'
           echo ""
           echo "🚨 ATTACK SIMULATIONS:"
           echo "   cd ../attack-scenarios          # Navigate to attack simulation directory"
-          echo "   ../attack-scenarios/simulate-attacks.sh      # Run comprehensive attack framework"
-          echo "   ../attack-scenarios/nix-hash-demo.sh         # Real Nix hash verification demo"
+          echo "   ../attack-scenarios/comprehensive-demo-suite.sh  # Complete Phase 2 demo suite"
+          echo "   ../attack-scenarios/automated-attack-tests.sh    # Automated vulnerability testing"
+          echo "   ../attack-scenarios/before-after-comparison.sh   # Security analysis with ROI"
+          echo "   ../attack-scenarios/simulate-attacks.sh          # Individual attack simulations"
+          echo "   ../attack-scenarios/nix-hash-demo.sh             # Real Nix hash verification demo"
           echo ""
           echo "📊 CURRENT PROJECT STATUS:"
           if [ -f "package-lock.json" ]; then
